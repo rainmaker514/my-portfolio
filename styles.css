@@ -38,10 +38,11 @@
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
     display: flex;
-    align-items: center;
+    align-items:center;
     cursor: pointer;
     text-decoration: none;
     font-size: 2.5rem;
+    transition: all 0.3s ease-in-out;
 }
 
 .navbar_menu {
@@ -56,23 +57,99 @@
 
 .navbar_links {
     color: white;
-    display: flex;
-    align-items: center;
+    display: flex; 
+    align-items: center; 
     justify-content: center;
     width: 125px;
     text-decoration: none;
     height: 100%;
+    transition: all 0.3s ease-in-out;
 }
 
-/* .navbar_links:hover { 
-    color: #8400ff;
-    transition: all 0.3s ease;
-} */
-
-.navbar_links:hover { 
+.navbar_links:hover, .navbar_logo:hover { 
     text-shadow: 0 0 10px #8400ff,
     0 0 50px #8400ff, 0 0 100px #8400ff,
     0 0 200px #8400ff, 0 0 400px #8400ff;
     color: #8400ff;
-    transition: all 0.3s ease;
 } 
+
+@media screen and (max-width: 960px) {
+    .navbar_container {
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        z-index: 1;
+        width: 100%;
+        max-width: 1300px;
+        padding: 0;
+    }
+
+    .navbar_menu {
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0;
+        width: 100%;
+        position: absolute;
+        top: -1000px;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: -1;
+    }
+
+    .navbar_menu.active {
+        background: black;
+        top: 100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 99;
+        height: 60vh;
+        font-size: 1.6rem;
+    }
+    
+    #navbar_logo {
+        padding-left: 25px;
+    }
+
+    .navbar_toggle .bar {
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        transition: all 0.3s ease-in-out;
+        background: white;
+    }
+
+    .navbar_item {
+        width: 100%;
+    }
+
+    .navbar_links {
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+    }
+
+    #mobile-menu {
+        position: absolute;
+        top: 20%;
+        right: 5%;
+        transform: translate(5%, 20%);
+    }
+
+    .navbar_toggle .bar {
+        display: block;
+        cursor: pointer;
+    }
+
+    #mobile-menu.is-active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    #mobile-menu.is-active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    #mobile-menu.is-active .bar:nth-child(1) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
