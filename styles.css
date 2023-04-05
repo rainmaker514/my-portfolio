@@ -157,7 +157,7 @@
 /* hero section */
 .hero {
     background: black;
-    padding: 300px;
+    padding: 200px 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -186,26 +186,33 @@
 .box {
     z-index: 20;
     height: 250px;
-    width: 350px;
+    width: 100%;
     background-color: rgba(0,0,0,.5);
+    box-shadow: 0px 0px 10px 1px #8400ff;
     color: #fff;
     border-radius: 25px;
     align-items: center;
     justify-content: center;
     position: relative;
     overflow: hidden;
+    transition: box-shadow 0.3s ease-in-out;
 }
 
-.box::before {
+.box:hover {
+    box-shadow: 0px 0px 40px 20px #8400ff;
+}
+
+ /* .box::before {
     content: '';
     position: absolute;
-    width: 100%;
+    width: 90%;
     height: 100%;
-    background: linear-gradient(#4776E6, #8E54E9);
+    background: linear-gradient(45deg, #e8f74d, #ff6600d9, #00ff66, #13ff13, #ad27ad, #bd2681, #6512b9, #ff3300de, #5aabde);
     left: 0px;
-    animation: animate 4s linear infinite;
-}
-
+    animation: glower 20s linear infinite;
+    z-index: -1;
+} */
+/*
  .box::after {
     content: '';
     height: 97%;
@@ -213,21 +220,25 @@
     background-color:#26173f;
     position: absolute;
     left: 5px;
-    top: 5px;
+    top: 4px;
     right: 14px;
-    bottom: 23px;  
+    bottom: 24px;  
     border-radius: 25px;  
-} 
+} */
 
- @keyframes animate {
+@keyframes glower {
     0% {
-        transform: rotate(0deg);
+      background-position: 0 0;
     }
-
+    
+    50% {
+      background-position: 400% 0;
+    }
+    
     100% {
-        transform: rotate(360deg);
+      background-position: 0 0;
     }
-}
+  }
 
 h1, p, .resume_btn, .cv_btn, .cv_btn1 {
     position: relative;
