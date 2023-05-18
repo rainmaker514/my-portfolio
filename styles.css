@@ -196,17 +196,6 @@ span {
     animation: flicker 1s linear infinite;
 }
 
-/* .hero_description {
-    position: relative;
-    
-    z-index: 20;
-    color: #fff;
-    font-size: 1.2rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    display: inline-block;
-    margin-bottom: 100px;
-} */
-
 .typed{
     color: #fff;
     font-size: 1.2rem;
@@ -282,6 +271,77 @@ span {
     border-radius: 10px;
 }
 
+/* ABOUT SECTION */
+.about{
+    background-color: black;
+    padding: 10rem 0;
+}
+
+.about_container{
+    height: 100%;
+    z-index: 1;
+    width: 100%;
+    border: #48ff00 dashed 1px;  
+}
+
+.about_img_container{
+    border: #48ff00 dashed 1px;
+    width: 100%;
+}
+
+.about_img{
+    width: 100%;
+    animation: floating 3s infinite ease-in-out;
+}
+
+.about_content{
+    color:#fff;
+    width: 100%;
+    justify-content: left;
+    /* border: #48ff00 dashed 1px; */
+}
+
+.about_content h1{
+    font-family: 'Monoton';
+    font-size: 2.4rem;
+    color: #8400ff;
+    font-weight: 400;
+    letter-spacing: 8px;
+    text-align: left;
+    text-shadow: 1px 0px 4px #e0beff, 
+    2px 0px 4px #e0beff, 
+    3px 0px 4px #e0beff, 
+    2px 0px 3px #8400ff, 
+    2px 3px 15px #8400ff, 
+    2px 0px 15px, 
+    5px 0px 125px, 
+    20px 0vw 200px #8400ff,
+    40px 0vw 200px #8400ff;
+    /* border: #48ff00 dashed 1px; */
+}
+
+.about_content p{
+    margin-bottom: 1em;
+}
+
+.border_container{
+    padding: 10px 0 10px 0;
+    text-align: left;
+}
+
+.border{
+    width: 160px;
+    height: 2px;
+    background: #8400ff;
+}
+
+.about_text{
+    line-height: 1.5;
+    font-size: 1.2em;
+    margin-bottom: 1em;
+    width:100%;
+}
+
 /* ANIMATIONS */
 @keyframes floating{
     0% { transform: translate(0,  0px); }
@@ -315,6 +375,12 @@ span {
 }
 
 /* MEDIA QUERY SECTION */
+@media screen and (min-height: 590px){
+    .box{
+        height: 377px;
+    }
+}
+
 @media screen and (min-width: 436px) {
     .hero_description{
         font-size: 1.1rem;

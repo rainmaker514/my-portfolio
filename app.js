@@ -1,18 +1,24 @@
-const menu = document.querySelector('#mobile-menu')
-const menuLinks = document.querySelector('.navbar_menu')
+const hamburgerMenu = document.querySelector('#mobile-menu');
+const navbarMenu = document.querySelector('.navbar_menu');
+const menuLinks = document.querySelector('.navbar_items');
 var typed = new Typed(".typed", {
     strings: ["Fullstack Web Developer", "Data Analyst", "Blogger"],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,
     loop: true
-})
+});
 
 //display mobile menu
-const mobileMenu = () => {
-    menu.classList.toggle('is-active')
-    menuLinks.classList.toggle('active')
-};
+hamburgerMenu.addEventListener('click', () => {
+    hamburgerMenu.classList.toggle('is-active');
+    navbarMenu.classList.toggle('active');
+});
 
-menu.addEventListener('click', mobileMenu);
-
+//close mobile menu on navbar menu click
+navbarMenu.addEventListener('click', () => {
+    if(window.innerWidth < 960){
+        hamburgerMenu.classList.toggle('is-active');
+        navbarMenu.classList.toggle('active');
+    }
+});
