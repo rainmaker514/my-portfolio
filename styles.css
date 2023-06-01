@@ -274,30 +274,116 @@ span {
 /* ABOUT SECTION */
 .about{
     background-color: black;
-    padding: 10rem 0;
+    z-index: 1;
+    position: relative;
+    padding: 5rem 0;
+    height: 1596px;
+    /* border: #48ff00 dashed 2px;  */
+}
+
+.wrapper{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: linear-gradient(black, #2F0743);
+}
+
+.about_box div{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    border: 6px solid #8400ff;
+    border-radius: 15px;
+    opacity: 0.2;
+}
+
+.about_box div:nth-child(1){
+    top: 40%;
+    left: 42%;
+    animation: animate 10s linear infinite;
+}
+
+.about_box div:nth-child(2){
+    top: 70%;
+    left: 50%;
+    animation: animate 7s linear infinite;
+}
+
+.about_box div:nth-child(3){
+    top: 17%;
+    left: 6%;
+    animation: animate 9s linear infinite;
+}
+
+.about_box div:nth-child(4){
+    top: 50%;
+    left: 60%;
+    animation: animate 10s linear infinite;
+}
+
+.about_box div:nth-child(5){
+    top: 67%;
+    left: 10%;
+    animation: animate 6s linear infinite;
+}
+
+.about_box div:nth-child(6){
+    top: 80%;
+    left: 70%;
+    animation: animate 12s linear infinite;
+}
+
+.about_box div:nth-child(7){
+    top: 60%;
+    left: 80%;
+    animation: animate 15s linear infinite;
+}
+
+.about_box div:nth-child(8){
+    top: 32%;
+    left: 25%;
+    animation: animate 16s linear infinite;
+}
+
+.about_box div:nth-child(9){
+    top: 90%;
+    left: 25%;
+    animation: animate 9s linear infinite;
+}
+
+.about_box div:nth-child(10){
+    top: 20%;
+    left: 80%;
+    animation: animate 5s linear infinite;
 }
 
 .about_container{
     height: 100%;
-    z-index: 1;
     width: 100%;
-    border: #48ff00 dashed 1px;  
+    /* border: #ff0000 dashed 2px;   */
 }
 
 .about_img_container{
-    border: #48ff00 dashed 1px;
+    /* border: #48ff00 dashed 1px; */
+    display: flex;
+    justify-content: center;
     width: 100%;
 }
 
 .about_img{
-    width: 100%;
+    width: 320px;
+    height: 320px;
     animation: floating 3s infinite ease-in-out;
 }
 
 .about_content{
     color:#fff;
     width: 100%;
-    justify-content: left;
+    /* justify-content: left; */
+    padding: 16px;
     /* border: #48ff00 dashed 1px; */
 }
 
@@ -330,15 +416,15 @@ span {
 }
 
 .border{
-    width: 160px;
+    width: 10em;
     height: 2px;
     background: #8400ff;
 }
 
 .about_text{
     line-height: 1.5;
-    font-size: 1.2em;
-    margin-bottom: 1em;
+    font-size: 1em;
+    /* margin-bottom: 16px; */
     width:100%;
 }
 
@@ -372,6 +458,18 @@ span {
     50% { background-position: 400% 0; }
     
     100% { background-position: 0 0; }
+}
+
+@keyframes animate{
+    0%{
+        transform: scale(0) translateY(0) rotate(0);
+        opacity: 1;
+    }
+
+    100%{
+        transform: scale(1.3) translateY(-90px) rotate(360deg);
+        opacity: 0;
+    }
 }
 
 /* MEDIA QUERY SECTION */
@@ -440,6 +538,12 @@ span {
     }
 }
 
+@media screen and (min-width: 640px){
+    #about-slow, #about-fast{
+        font-size: 1em;
+    } 
+}
+
 @media screen and (min-width: 712px) {
     .box{
         width:640px;
@@ -451,7 +555,11 @@ span {
     
     .roles{
         padding: 20px 0 0 0;
-    }   
+    }
+    
+    .about_container{
+        display: flex;
+    }
 }
 
 @media screen and (min-width: 960px) {
@@ -483,6 +591,37 @@ span {
         height: 100%;
         transition: all 0.3s ease-in-out;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .about_img{
+        width: 100%;
+        height: auto;
+        max-height: 450px;
+        max-width: 450px;
+    }
+
+    .about_box div:nth-child(1){
+        top: 20%;
+        left: 42%;
+        animation: animate 10s linear infinite;
+    }
+
+    .about_box div:nth-child(2){
+        top: 30%;
+        left: 50%;
+        animation: animate 7s linear infinite;
+    }
+
+    .about_box div:nth-child(5){
+        top: 45%;
+        left: 10%;
+        animation: animate 6s linear infinite;
+    }
+
+    .about_box div:nth-child(7){
+        top: 34%;
+        left: 80%;
+        animation: animate 15s linear infinite;
     }
 }
 
