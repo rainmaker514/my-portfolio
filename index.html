@@ -5,33 +5,117 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teriq Douglas</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Monoton">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- nav bar -->
+    <!-- NAVBAR SECTION -->
     <nav class="navbar">
-        <div class="navbar_container">
-            <a class="navbar_logo" href="#home" id="navbar_logo">&lt;TD/&gt;</a>
-            <div class="navbar_toggle" id="mobile-menu">
+        <div class="navbar-container">
+            <a class="navbar-logo" alt="Home" title="Home" href="#home" id="navbar-logo">TD&nbsp;&nbsp;<i class="fa-solid fa-code"></i>&nbsp;&nbsp;<i class="fa-solid fa-database"></i></a>
+            <div class="navbar-toggle" id="mobile-menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
             </div>
-            <ul class="navbar_menu">
-                <li class="navbar_item">
-                    <a href="#home" class="navbar_links" id="home-page">Home</a>
+            <ul class="navbar-menu">
+                <li class="navbar-item">
+                    <a href="#" class="navbar-links" id="home-page">Home</a>
                 </li>
-                <li class="navbar_item">
-                    <a href="#about" class="navbar_links" id="about-page">About</a>
+                <li class="navbar-item">
+                    <a href="#about" class="navbar-links" id="about-page">About</a>
                 </li>
-                <li class="navbar_item">
-                    <a href="#projects" class="navbar_links" id="projects-page">Projects</a>
+                <li class="navbar-item">
+                    <a href="#skills" class="navbar-links" id="skills-page">Skills</a>
                 </li>
-                <li class="navbar_item">
-                    <a href="#contact" class="navbar_links" id="contact-page">Contact Me!</a>
+                <li class="navbar-item">
+                    <a href="#projects" class="navbar-links" id="projects-page">Projects</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="#" class="navbar-links" id="blog">Blog</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="#contact" class="navbar-links" id="contact-page">Contact Me!</a>
                 </li>
             </ul>
         </div>
     </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+        <video loop muted autoplay preload="auto">
+            <source src="videos/synth.mp4" type="video/mp4">
+        </video>
+        <div class="hero-container">
+            <div class="box">
+                <h1 class="neon-sign-heading">TE<span class="flicker-slow">R</span>IQ <span class="flicker-slow">D</span>OU<span class="flicker-fast">G</span>LAS</h1> 
+                <div class="roles">
+                    <span class="typed"></span>
+                </div>
+                <button onclick="window.location.href='https://drive.google.com/file/d/1aUI6wHrOETLzi1dTo8QdKwftVVQqBDFE/view?usp=sharing';" class="resume-btn" type="button">Download Resume</button>
+                <button onclick="window.location.href='https://drive.google.com/file/d/1rwjMaq4rvRcL_Mr3nU31fm66slaVzwcb/view?usp=sharing';" id="cv" class="fs-cv-btn" type="button">Download CV</button>
+                 <!-- <button onclick="window.location.href='https://drive.google.com/uc?export=download&id=1GJ3Ei-vA5I2tXCrRrewCOCZpfc0HiuqU';"class="fs-cv-btn1">Download CV (Data Analyst)</button> -->
+            </div>
+        </div> 
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about-section" id="about">
+        <div class="wrapper">
+            <div class="about-box">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <div class="about-container">
+            <div class="about-img-container">
+                <img class="about-img" src="images/profile1.png">
+            </div>
+            <div class="about-content">
+                <h1 class="section-title">Ab<span id="about-slow" class="flicker-slow">o</span>ut <span id="about-fast" class="flicker-fast">M</span>e</h1>
+                <div class="border-container">
+                    <div class="border"></div>
+                </div>
+                <!-- DESCRIPTION -->
+                <div class="about-text">
+                    <p>I am a dedicated Fullstack Web Developer and Data Analyst based in Hollywood, FL. With a strong background in
+                        computer
+                        science and a passion for creating innovative solutions, I strive to deliver high-quality projects that meet client
+                        needs and drive positive outcomes.</p>
+                    <p>As a freelance web developer and software engineer, I have been actively involved in creating web applications and
+                        software solutions for clients. Leveraging my expertise in fullstack development and strong technical skills, I
+                        deliver
+                        customized solutions that align with client requirements and industry best practices.</p>
+                        <p>I hold a Bachelor of Computer Science from Florida International University in Miami, FL. This comprehensive program
+                        provided me with a solid foundation in computer science principles and equipped me with the skills necessary to tackle
+                        complex software development challenges. Additionally, I earned an Associate of Arts degree from Broward College in
+                        Davie, FL, which served as a starting point for my understanding of various aspects of technology.</p>
+                    <p>I am committed to continuous learning and staying updated with the latest technologies. This dedication allows me to
+                    deliver high-quality projects and exceed client expectations. I am always open to new opportunities and collaborations
+                    that allow me to contribute my skills and expertise to impactful projects.</p>
+                </div>
+            </div>   
+        </div>
+    </section>
+
+    <!--SKILLS SECTION-->
+    <section class="skills-section" id="skills">
+        <div class="skills-container">
+            <h1 class="section-title">Skills</h1>
+        </div>
+    </section>
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+    <script src="js/particles.min.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
