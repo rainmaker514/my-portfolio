@@ -33,7 +33,7 @@
 #navbar-logo {
     padding-left: 25px;
     font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-    background-color: #8400ff;
+    background-color: #5900b3;
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -49,9 +49,9 @@
 
 .navbar-links:hover,
 .navbar-logo:hover {
-    text-shadow: 0 0 10px #8400ff, 0 0 50px #8400ff, 0 0 100px #8400ff,
-    0 0 200px #8400ff, 0 0 400px #8400ff;
-    color: #8400ff;
+    text-shadow: 0 0 10px #5900b3, 0 0 50px #5900b3, 0 0 100px #5900b3,
+    0 0 200px #5900b3, 0 0 400px #5900b3;
+    color: #5900b3;
 }
 
 .navbar-menu {
@@ -108,9 +108,9 @@
 }
 
 #mobile-menu i:hover{
-    text-shadow: 0 0 10px #8400ff, 0 0 50px #8400ff, 0 0 100px #8400ff,
-    0 0 200px #8400ff, 0 0 400px #8400ff;
-    color: #8400ff;
+    text-shadow: 0 0 10px #5900b3, 0 0 50px #5900b3, 0 0 100px #5900b3,
+    0 0 200px #5900b3, 0 0 400px #5900b3;
+    color: #5900b3;
 }
 
 /* HERO SECTION */
@@ -143,7 +143,7 @@
     height: 65%;
     margin: 50px 0 0 0;
     background-color: rgba(0, 0, 0, 0.5);
-    box-shadow: 0px 0px 10px 1px #8400ff;
+    box-shadow: 0px 0px 10px 1px #5900b3;
     border-radius: 25px;
     text-align: center;
     transition: box-shadow 0.3s ease-in-out;
@@ -151,27 +151,27 @@
 }
 
 .box:hover {
-    box-shadow: 0px 0px 40px 20px #8400ff;
+    box-shadow: 0px 0px 40px 20px #5900b3;
 }
 
 .neon-sign-heading {
     font-family: "Monoton";
     font-size: 2.4rem;
-    color: #8400ff;
+    color: #5900b3;
     font-weight: 400;
     letter-spacing: 8px;
     position: relative;
     top: 35px;
     left: 4px;
     text-shadow: 1px 0px 4px #e0beff, 2px 0px 4px #e0beff, 3px 0px 4px #e0beff,
-    2px 0px 3px #8400ff, 2px 3px 15px #8400ff, 2px 0px 15px, 5px 0px 125px,
-    20px 0vw 200px #8400ff, 40px 0vw 200px #8400ff;
+    2px 0px 3px #5900b3, 2px 3px 15px #5900b3, 2px 0px 15px, 5px 0px 125px,
+    20px 0vw 200px #5900b3, 40px 0vw 200px #5900b3;
 }
 
 span {
     font-family: "Monoton";
     font-size: 2.4rem;
-    color: #8400ff;
+    color: #5900b3;
     font-weight: 400;
     letter-spacing: 8px;
 }
@@ -297,7 +297,7 @@ span {
     width: 60px;
     height: 60px;
     background-color: transparent;
-    border: 6px solid #8400ff;
+    border: 6px solid #5900b3;
     border-radius: 15px;
     opacity: 0.2;
 }
@@ -388,13 +388,13 @@ span {
 .section-title {
     font-family: "Monoton";
     font-size: 2.4rem;
-    color: #8400ff;
+    color: #5900b3;
     font-weight: 400;
     letter-spacing: 8px;
     text-align: left;
     text-shadow: 1px 0px 4px #e0beff, 2px 0px 4px #e0beff, 3px 0px 4px #e0beff,
-    2px 0px 3px #8400ff, 2px 3px 15px #8400ff, 2px 0px 15px, 5px 0px 125px,
-    20px 0vw 200px #8400ff, 40px 0vw 200px #8400ff;
+    2px 0px 3px #5900b3, 2px 3px 15px #5900b3, 2px 0px 15px, 5px 0px 125px,
+    20px 0vw 200px #5900b3, 40px 0vw 200px #5900b3;
   /* border: #48ff00 dashed 1px; */
 }
 
@@ -409,7 +409,7 @@ span {
 .border {
     width: 10em;
     height: 2px;
-    background: #8400ff;
+    background: #5900b3;
 }
 
 .about-text {
@@ -422,7 +422,7 @@ span {
 .skills-section{
     width: 100%;
     height: auto;
-    /* background: linear-gradient(#2f0743, 90%, #8400ff); */
+    /* background: linear-gradient(#2f0743, 90%, #5900b3); */
     background: black;
     /* z-index: 2; */
     margin-top: 5rem;
@@ -453,9 +453,8 @@ span {
 
 .skills-subsection-title{
     font-size: 1.5em;
-    text-shadow: 0 0 10px #8400ff, 0 0 50px #8400ff, 0 0 100px #8400ff,
-    0 0 200px #8400ff, 0 0 400px #8400ff;
-    color: #8400ff;
+    text-shadow: 0 0 10px #8001ff, 0 0 50px #8001ff, 0 0 100px #8001ff;
+    color: #5900b3;
     letter-spacing: 1px;
     padding: 20px 0 16px 0;
     z-index: 2;
