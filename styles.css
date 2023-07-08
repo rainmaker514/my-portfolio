@@ -203,7 +203,7 @@ span {
 }
 
 .resume-btn,
-.fs-cv-btn, .close-modal {
+.fs-cv-btn, .close-modal, .submit-btn {
     position: relative;
     top: 0px;
     margin-top: 10px;
@@ -219,7 +219,7 @@ span {
 }
 
 .resume-btn::before,
-.fs-cv-btn::before, .close-modal::before {
+.fs-cv-btn::before, .close-modal::before, .submit-btn::before {
     content: "";
     background: linear-gradient(
     45deg,
@@ -248,22 +248,22 @@ span {
 }
 
 .resume-btn:active,
-.fs-cv-btn:active, .close-modal:active {
+.fs-cv-btn:active, .close-modal:active, .submit-btn:active {
     color: #abeb34;
 }
 
 .resume-btn:active::after,
-.fs-cv-btn:active::after, .close-modal:active:after {
+.fs-cv-btn:active::after, .close-modal:active:after, .submit-btn:active::after {
     background: transparent;
 }
 
 .resume-btn:hover::before,
-.fs-cv-btn:hover::before, .close-modal:hover::before {
+.fs-cv-btn:hover::before, .close-modal:hover::before, .submit-btn:hover::before {
     opacity: 1;
 }
 
 .resume-btn::after,
-.fs-cv-btn::after, .close-modal::after {
+.fs-cv-btn::after, .close-modal::after, .submit-btn::after {
     z-index: -1;
     content: "";
     position: absolute;
@@ -560,6 +560,34 @@ span {
 
 .blogs-modal::backdrop {
     background: rgb(0 0 0 / 0.7);
+}
+
+.contact-section{
+    background: linear-gradient(black, #2f0743);
+    padding-top: 5rem;
+    width: 100%;
+    height: auto;
+}
+
+form{
+    padding: 0 10px;
+    text-align: center;
+    margin: auto;
+    max-width: 600px;
+}
+
+.contact-form-input {
+    margin: 16px 0;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #7a00ff;
+    background: #111;
+    padding: 20px 40px;
+    outline: none;
+    color: #ddd;
+    border-radius: 10px;
+    transition: 0.5s;
 }
 
 /* ANIMATIONS */
