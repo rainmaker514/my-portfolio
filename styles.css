@@ -562,9 +562,10 @@ span {
     background: rgb(0 0 0 / 0.7);
 }
 
+/* CONTACT SECTION */
 .contact-section{
     background: linear-gradient(black, #2f0743);
-    padding-top: 5rem;
+    padding: 5rem 0 1rem 0;
     width: 100%;
     height: auto;
 }
@@ -589,6 +590,48 @@ form{
     border-radius: 10px;
     transition: 0.5s;
 }
+
+#textarea{
+    height: 120px;
+    resize: none;
+}
+
+.contact-form-input:focus{
+    box-shadow: 0 0 10px 2px #7a00ff;
+}
+
+/* FOOTER SECTION */
+footer{
+    background: black;
+    width: 100%;
+    height: auto;
+    padding: 40px 0;
+}
+
+.social-icons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    font-size: 2rem;
+}
+
+.social-icons i:hover{
+    color: white;
+}
+
+.social-icons i{
+    color: #5900b3;
+    transition: all 0.3s ease 0s;
+}
+
+footer h6{
+    color: white;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+
 
 /* ANIMATIONS */
 @keyframes floating {
