@@ -1,0 +1,11 @@
+<svg aria-label="Docker" role="img" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="218" y1="134" x2="218" y2="226" id="gradient-0">
+      <stop offset="0" style="stop-color: rgba(90, 0, 179, 1)"></stop>
+      <stop offset="1" style="stop-color: rgba(39, 0, 77, 1)"></stop>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="15%" style="fill: rgba(255, 255, 255, 0);"></rect>
+  <path stroke="#5900b3" stroke-width="38" d="M296 226h42m-92 0h42m-91 0h42m-91 0h41m-91 0h42m8-46h41m8 0h42m7 0h42m-42-46h42" style="fill: rgb(90, 0, 179);"></path>
+  <path d="m472 228s-18-17-55-11c-4-29-35-46-35-46s-29 35-8 74c-6 3-16 7-31 7H68c-5 19-5 145 133 145 99 0 173-46 208-130 52 4 63-39 63-39" style="fill: rgb(89, 0, 179);"></path>
+</svg>
