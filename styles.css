@@ -488,6 +488,10 @@ span {
     padding: 0 16px 0 16px;
 }
 
+.pic{
+    display: flex;
+}
+
 .projects-title{
     color: #5900b3;
     font-size: 2rem;
