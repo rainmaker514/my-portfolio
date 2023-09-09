@@ -488,8 +488,9 @@ span {
     padding: 0 16px 0 16px;
 }
 
-.pic{
-    display: flex;
+.projects-img img{
+    height: auto;
+    width: 100%;
 }
 
 .projects-title{
@@ -520,11 +521,6 @@ span {
 .projects-links{
     display: flex;
     color: white;
-}
-
-.projects-container img{
-    height: auto;
-    width:100%;
 }
 
 /* BLOGS MODAL */
@@ -856,8 +852,13 @@ footer h6{
         animation: animate 15s linear infinite;
     }
 
-    .projects-container img{
-        height: auto;
-        width:50%;
-    }
+    .projects-item{
+        display: grid;
+        grid-template-columns: 40% 40%;
+        grid-row-gap: 10rem;
+        grid-gap: 2rem;
+        justify-content: center;
+        align-items: center;
+        margin: 5rem 0 5rem 0;
+    }    
 }
