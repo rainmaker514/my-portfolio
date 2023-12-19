@@ -17,6 +17,7 @@
   position: sticky;
   top: 0;
   z-index: 999;
+  border-bottom: 3px white solid;
 }
 
 .navbar-container {
@@ -27,7 +28,6 @@
   width: 100%;
   max-width: 1300px;
   padding: 0;
-  border-bottom: 3px white solid;
 }
 
 .navbar-logo-link {
@@ -44,51 +44,31 @@
   letter-spacing: 3px;
 }
 
+.navbar-logo {
+  text-shadow: 0 0 7px #5900b3, 0 0 10px #5900b3, 0 0 21px #5900b3,
+    0 0 42px #5900b3, 0 0 82px #5900b3, 0 0 92px #5900b3, 0 0 102px #5900b3,
+    0 0 151px #5900b3;
+  animation: flicker 1.5s ease-out 0.1s infinite alternate;
+  transition: all 0.2s ease-in-out;
+}
+
 .navbar-logo:hover {
   text-shadow: 0 0 7px #5900b3, 0 0 10px #5900b3, 0 0 21px #5900b3,
     0 0 42px #5900b3, 0 0 82px #5900b3, 0 0 92px #5900b3, 0 0 102px #5900b3,
     0 0 151px #5900b3;
-    
-  transition: ease-out 0.1s;
-  animation: pulsate 0.11s ease-out 0.5s infinite alternate;
+  animation: unset;
+  transform: scale(1.05);
 }
 
-/* .neon-sign-heading {
-  font-family: "Monoton";
-  font-size: 1rem;
-  color: #5900b3;
-  font-weight: 400;
-  letter-spacing: 8px;
-  position: absolute;
-  text-shadow: 1px 0px 4px #e0beff, 2px 0px 4px #e0beff, 3px 0px 4px #e0beff,
-    2px 0px 3px #5900b3, 2px 3px 15px #5900b3, 2px 0px 15px, 5px 0px 125px,
-    20px 0vw 200px #5900b3, 40px 0vw 200px #5900b3;
-} */
-
-/* span {
-  font-family: "Monoton";
-  font-size: 1rem;
-  color: #5900b3;
-  font-weight: 400;
-  letter-spacing: 8px;
-} */
-
-/* #navbar-logo {
-  padding-left: 25px;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  background-color: #5900b3;
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
+.navbar-links {
+  color: white;
+  text-align: center;
+  padding: 0;
+  width: 100%;
+  display: table;
   text-decoration: none;
-  font-size: 2rem;
-  transition: all 0.3s ease-in-out;
-} */
+  font-family: "Yellowtail" !important;
+}
 
 .navbar-links:hover {
   text-shadow: 0 0 10px #5900b3, 0 0 50px #5900b3, 0 0 100px #5900b3,
@@ -129,15 +109,6 @@
 .navbar-item {
   width: 100%;
   height: 50px;
-}
-
-.navbar-links {
-  color: white;
-  text-align: center;
-  padding: 0;
-  width: 100%;
-  display: table;
-  text-decoration: none;
 }
 
 #mobile-menu i {
@@ -654,15 +625,23 @@ footer h6 {
 }
 
 /* ANIMATIONS */
-@keyframes pulsate {
+@keyframes flicker {
+  0%,
+  18%,
+  22%,
+  25%,
+  53%,
+  57%,
   100% {
-    text-shadow: 0 0 4px #5900b3, 0 0 11px #5900b3, 0 0 19px #5900b3, 0 0 40px #5900b3,
-      0 0 80px #5900b3, 0 0 90px #5900b3, 0 0 100px #5900b3, 0 0 150px #5271ff;
+    text-shadow: 0 0 4px #5900b3, 0 0 11px #5900b3, 0 0 19px #5900b3,
+      0 0 40px #5900b3, 0 0 80px #5900b3, 0 0 90px #5900b3, 0 0 100px #5900b3,
+      0 0 150px #5900b3;
   }
 
-  0% {
-    text-shadow: 0 0 4px #5900b3, 0 0 10px #5900b3, 0 0 18px #5900b3, 0 0 38px #5900b3,
-      0 0 73px #5900b3, 0 0 80px #5900b3, 0 0 94px #5900b3, 0 0 140px #5900b3;
+  20%,
+  24%,
+  55% {
+    text-shadow: none;
   }
 }
 
