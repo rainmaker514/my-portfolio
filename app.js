@@ -7,7 +7,7 @@ const openModal = document.querySelector("#blogs");
 const closeModal = document.querySelector(".close-modal");
 
 var typed = new Typed(".typed", {
-  strings: ["Fullstack Web Developer", "Software Engineer", "Blogger"],
+  strings: ["Fullstack Developer", "Software Engineer", "Blogger"],
   typeSpeed: 100,
   backSpeed: 100,
   backDelay: 1000,
