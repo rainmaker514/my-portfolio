@@ -139,39 +139,69 @@
 /* MOBILE MENU ICON */
 .mobile-menu-icon{
   cursor: pointer;
-  display: inline-block;
-  float: right;
-  padding: 28px 20px;
-  position: relative;
-  user-select: none;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  margin-right: 30px;
+  /* float: right; */
+  /* position: relative; */
+  /* user-select: none; */
 }
 
 .mobile-menu-icon .navicon{
-  background: #333;
+  background: white;
   display: block;
-  height: 2px;
+  height: 5px;
   position: relative;
   transition: background-color .2s ease-out;
-  width: 18px;
+  width: 30px;
+  border-radius: 100px;  
 }
 
-.mobile-menu-icon .navicon:before,
-.mobile-menu-icon .navicon:after {
-  background: #333;
+.mobile-menu-icon .navicon::before,
+.mobile-menu-icon .navicon::after {
+  background: white;
   content: '';
   display: block;
   height: 100%;
   position: absolute;
   transition: all .2s ease-out;
   width: 100%;
+  border-radius: 100px;
 }
 
-.mobile-menu-icon .navicon:before {
-  top: 5px;
+.mobile-menu-icon .navicon::before {
+  top: 10px;
 }
 
-.mobile-menu-icon .navicon:after {
-  top: -5px;
+.mobile-menu-icon .navicon::after {
+  top: -10px;
+}
+
+/* MOBILE MENU TOGGLE BUTTON */
+.mobile-menu-toggle{
+  display: none;
+}
+
+.mobile-menu-toggle:checked ~ .navbar-menu{
+  max-height: 240px;
+}
+
+.mobile-menu-toggle:checked ~ .mobile-menu-icon .navicon{
+  background: transparent;
+}
+
+.mobile-menu-toggle:checked ~ .mobile-menu-icon .navicon::before{
+  transform: rotate(-45deg);
+}
+
+.mobile-menu-toggle:checked ~ .mobile-menu-icon .navicon::after{
+  transform: rotate(45deg);
+}
+
+.mobile-menu-toggle:checked ~ .mobile-menu-icon:not(.steps) .navicon::before,
+.mobile-menu-toggle:checked ~ .mobile-menu-icon:not(.steps) .navicon::after {
+  top: 0;
 }
 
 /* HERO SECTION */
@@ -857,7 +887,7 @@ footer h6 {
 }
 
 @media screen and (min-width: 960px) {
-  .navbar-toggle {
+  .mobile-menu-icon {
     display: none;
   }
 
