@@ -10,6 +10,10 @@
   scroll-behavior: smooth;
 }
 
+body{
+  background-color: black;
+}
+
 /* SCROLLBAR STYLES */
 ::-webkit-scrollbar {
   width: 10px;
@@ -438,7 +442,6 @@
   font-family: Yellowtail;
   font-size: 2.4rem;
   color: white;
-  
   letter-spacing: 3px;
   text-align: center;
   text-shadow: 0 0 7px #5900b3, 0 0 10px #5900b3, 0 0 21px #5900b3,
@@ -484,29 +487,18 @@
   padding-top: 5rem;
 }
 
-#particles-js1 {
-  display: none;
-}
-
 .skills-container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.skills-section h1 {
-  text-align: center;
-}
-
-#border {
-  display: flex;
-  justify-content: center;
-}
-
 .skills-subsection-title {
   font-size: 1.5em;
-  text-shadow: 0 0 10px #8001ff, 0 0 50px #8001ff, 0 0 100px #8001ff;
-  color: #5900b3;
+  text-shadow: 0 0 7px #5900b3, 0 0 10px #5900b3, 0 0 21px #5900b3,
+    0 0 42px #5900b3, 0 0 82px #5900b3, 0 0 92px #5900b3, 0 0 102px #5900b3,
+    0 0 151px #5900b3;
+  color: white;
   letter-spacing: 1px;
   padding: 20px 0 16px 0;
   z-index: 2;
@@ -538,10 +530,6 @@
   height: auto;
   background: black;
   padding-top: 5rem;
-}
-
-.section-title {
-  text-align: center;
 }
 
 .projects-container {
@@ -581,34 +569,6 @@
 .projects-links {
   display: flex;
   color: white;
-}
-
-/* BLOGS MODAL */
-.blogs-modal {
-  width: 300px;
-  height: auto;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: black;
-  box-shadow: 0px 0px 10px 1px #5900b3;
-  border-radius: 25px;
-  text-align: center;
-}
-
-.blogs-modal img {
-  width: 100px;
-  height: 200px;
-}
-
-.blogs-modal h2 {
-  color: white;
-  font-weight: 100;
-}
-
-.blogs-modal::backdrop {
-  background: rgb(0 0 0 / 0.7);
 }
 
 /* CONTACT SECTION */

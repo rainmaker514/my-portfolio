@@ -44,3 +44,13 @@ sr.reveal(".about-text p:nth-child(2)", { delay: 100, origin: "bottom" });
 sr.reveal(".about-text p:nth-child(3)", { delay: 100, origin: "bottom" });
 sr.reveal(".about-text p:nth-child(4)", { delay: 100, origin: "bottom" });
 sr.reveal(".about-icon", { delay: 100, origin: "bottom" });
+
+//SR SKILLS
+sr.reveal(".skills-subsection", { delay: 100, origin: "bottom" });
+
+//SR PROJECTS
+sr.reveal(".projects-item", { delay: 100, origin: "bottom" });
+
+//SR CONTACT
+sr.reveal(".contact-form", { delay: 100, origin: "bottom" });
+
