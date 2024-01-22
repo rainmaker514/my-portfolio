@@ -36,14 +36,9 @@ body{
 /* NAVBAR SECTION */
 .navbar {
   background: black url("https://i.ibb.co/Qjw6pLp/wall-2059909-640.png");
-  /* height: 80px; */
-  /* display: flex; */
-  /* justify-content: center; */
-  /* align-items: center; */
   font-size: 1.2rem;
   position: fixed;
   width: 100%;
-
   z-index: 3;
   border-bottom: 3px white solid;
   transition: 0.3s;
@@ -59,7 +54,6 @@ body{
   font-family: "Yellowtail";
   font-size: 2rem;
   letter-spacing: 3px;
-  /* padding-left: 16px; */
   transform-origin: center bottom;
   float: left;
   position: relative;
@@ -90,20 +84,16 @@ body{
   list-style: none;
   overflow: hidden;
   clear: both;
-  /* height: 100%; */
   max-height: 0;
   transition: max-height 0.2s ease-out;
 }
 
 .navbar-item a {
   width: 100%;
-  /* height: 50px; */
   padding: 8px;
   display: block;
   transition: all 0.2s ease-out !important;
   transform-origin: center bottom;
-  /* margin-top: 30px; */
-  /* height: 100%; */
 }
 
 .navbar-item:hover {
@@ -112,10 +102,8 @@ body{
 
 .navbar-links {
   color: white;
-  /* text-align: center; */
   padding: 20px 20px;
   height: 100%;
-  /* width: 100%; */
   display: block;
   padding: 0;
   text-decoration: none;
@@ -673,27 +661,6 @@ footer h6 {
   }
 }
 
-@keyframes flicker {
-  0%,
-  19.999%,
-  22%,
-  62.999%,
-  64%,
-  64.999%,
-  70%,
-  100% {
-    opacity: 0.99;
-  }
-  20%,
-  21.999%,
-  63%,
-  63.999%,
-  65%,
-  69.999% {
-    opacity: 0.4;
-  }
-}
-
 @keyframes glowing {
   0% {
     background-position: 0 0;
@@ -701,20 +668,6 @@ footer h6 {
   50% {
     background-position: 400% 0;
   }
-  100% {
-    background-position: 0 0;
-  }
-}
-
-@keyframes glower {
-  0% {
-    background-position: 0 0;
-  }
-
-  50% {
-    background-position: 400% 0;
-  }
-
   100% {
     background-position: 0 0;
   }
@@ -733,10 +686,6 @@ footer h6 {
 }
 
 /* MEDIA QUERY SECTION */
-/* @media screen and (min-height: 590px) {
-  
-} */
-
 @media screen and (min-width: 375px) {
   .navbar-logo {
     font-size: 2.5rem;
@@ -765,16 +714,6 @@ footer h6 {
     display: inline-block;
     margin: 20px 0 0 0;
   }
-
-  .roles {
-    padding: 20px 0 0 0;
-  }
-
-  .neon-sign-heading,
-  span {
-    font-size: 3.2rem;
-    margin: 0;
-  }
 }
 
 @media screen and (min-width: 649px) {
@@ -786,10 +725,6 @@ footer h6 {
   .typed {
     font-size: 2rem;
   }
-
-  .roles {
-    margin: 40px 0 0 0;
-  }
 }
 
 @media screen and (min-width: 640px) {
@@ -799,16 +734,8 @@ footer h6 {
 }
 
 @media screen and (min-width: 712px) {
-  .box {
-    width: 640px;
-  }
-
   .typed {
     font-size: 2rem;
-  }
-
-  .roles {
-    padding: 20px 0 0 0;
   }
 
   .about-container {
@@ -864,7 +791,6 @@ footer h6 {
     max-height: none;
     display: flex;
     list-style: none;
-    /* height: 100%; */
     padding: 10px 20px;
   }
 
