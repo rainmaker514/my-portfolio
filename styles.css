@@ -10,7 +10,7 @@
   scroll-behavior: smooth;
 }
 
-body{
+body {
   background-color: black;
 }
 
@@ -224,7 +224,7 @@ body{
 .typed {
   color: white;
   font-size: 2.5em;
-  text-transform:uppercase;
+  text-transform: uppercase;
   font-family: Montserrat;
   letter-spacing: 4px;
   text-shadow: 0 0 7px #5900b3, 0 0 10px #5900b3, 0 0 21px #5900b3,
@@ -530,12 +530,14 @@ body{
 }
 
 .projects-title {
-  color: #5900b3;
+  color: white;
   font-size: 2rem;
   font-weight: 300;
   margin-top: 2em;
   letter-spacing: 1px;
-  text-shadow: 0 0 10px #8001ff, 0 0 50px #8001ff, 0 0 100px #8001ff;
+  text-shadow: 0 0 7px #5900b3, 0 0 10px #5900b3, 0 0 21px #5900b3,
+    0 0 42px #5900b3, 0 0 82px #5900b3, 0 0 92px #5900b3, 0 0 102px #5900b3,
+    0 0 151px #5900b3;
 }
 
 .projects-tools {
@@ -550,7 +552,7 @@ body{
 }
 
 .projects-links a {
-  text-decoration: none;
+  font-weight: 900;
   margin-bottom: 1em;
 }
 
@@ -753,25 +755,23 @@ footer h6 {
     width: 50%;
   }
 
-  .hero-title h1{
+  .hero-title h1 {
     font-size: 3em;
   }
 
-  .typed{
+  .typed {
     font-size: 3em;
   }
 
-
-  .hero-img{
+  .hero-img {
     width: 50%;
     margin: 0;
   }
 
-  .hero-img img{
+  .hero-img img {
     height: 350px;
     width: 350px;
   }
-
 
   .skills-container {
     all: unset;
@@ -841,15 +841,15 @@ footer h6 {
 }
 
 @media screen and (min-width: 1024px) {
-  .hero-title h1{
+  .hero-title h1 {
     font-size: 4em;
   }
 
-  .typed{
+  .typed {
     font-size: 4em;
   }
 
-  .typed-cursor{
+  .typed-cursor {
     font-size: 5em;
   }
 }
