@@ -499,10 +499,10 @@ body {
   z-index: 2;
 }
 
-.icon {
-  height: 100px;
+/* .icon {
+  height: auto;
   width: 100px;
-}
+} */
 
 .skills-section h5 {
   text-align: center;
