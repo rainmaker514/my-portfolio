@@ -11,6 +11,14 @@
         as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="fontello.css">
+    <script type="module">
+        import { partytownSnippet } from '@builder.io/partytown/integration';
+
+        const snippetText = partytownSnippet();
+        const scriptTag = document.createElement('script');
+        scriptTag.innerText = snippetText;
+        document.body.appendChild(scriptTag);
+    </script>
 </head>
 
 <body>
@@ -356,36 +364,9 @@
         <p>Made with love by Teriq Douglas © 2024</p>
     </footer>
 
-    <!-- <script async src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
-    <script async src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
-    <script async src="app.js"></script> -->
-    <script async type="text/javascript">
-        setTimeout(function(){
-            var headID = document.getElementsByTagName("head")[0];
-            var newScript = document.createElement("script");
-            newScript.type = "text/javascript";
-            newScript.src = "https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js";
-            headID.appendChild(newScript);
-        }, 3000);
-    </script>
-    <script async type="text/javascript">
-        setTimeout(function () {
-            var headID = document.getElementsByTagName("head")[0];
-            var newScript = document.createElement("script");
-            newScript.type = "text/javascript";
-            newScript.src = "https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js";
-            headID.appendChild(newScript);
-        }, 3000);
-    </script>
-    <script async type="text/javascript">
-        setTimeout(function () {
-            var headID = document.getElementsByTagName("head")[0];
-            var newScript = document.createElement("script");
-            newScript.type = "text/javascript";
-            newScript.src = "app.js";
-            headID.appendChild(newScript);
-        }, 3000);
-    </script>
+    <script type="text/partytown" src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+    <script type="text/partytown" src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
+    <script type="text/partytown" src="app.js"></script>
 </body>
 
 </html>
