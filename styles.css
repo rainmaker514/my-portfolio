@@ -56,7 +56,6 @@ body {
   position: relative;
   display: block;
   padding: 10px 20px 10px 16px;
-  text-rendering: optimizeLegibility;
 }
 
 .navbar-logo,
